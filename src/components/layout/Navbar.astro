@@ -1,0 +1,52 @@
+---
+// Navigation Bar Component
+import Logo from './Logo.astro';
+---
+<nav class="fixed w-full z-50 top-0 bg-midnight/90 backdrop-blur-md border-b border-charcoal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo -->
+      <Logo />
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+        <a href="/" class="text-gold hover:text-offwhite transition-colors">Home</a>
+        <a href="/about" class="text-offwhite hover:text-gold transition-colors">About</a>
+        <a href="/services" class="text-offwhite hover:text-gold transition-colors">Services</a>
+        <a href="/portfolio" class="text-offwhite hover:text-gold transition-colors">Portfolio</a>
+        <a href="/contact" class="text-offwhite hover:text-gold transition-colors">Contact</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-offwhite hover:text-gold focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-charcoal border-t border-white/10">
+    <div class="px-4 pt-2 pb-6 space-y-2 text-center text-sm font-semibold uppercase tracking-widest">
+      <a href="/" class="block py-3 text-gold hover:text-offwhite transition-colors border-b border-white/5">Home</a>
+      <a href="/about" class="block py-3 text-offwhite hover:text-gold transition-colors border-b border-white/5">About</a>
+      <a href="/services" class="block py-3 text-offwhite hover:text-gold transition-colors border-b border-white/5">Services</a>
+      <a href="/portfolio" class="block py-3 text-offwhite hover:text-gold transition-colors border-b border-white/5">Portfolio</a>
+      <a href="/contact" class="block py-3 text-offwhite hover:text-gold transition-colors">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Script to toggle the mobile menu -->
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>

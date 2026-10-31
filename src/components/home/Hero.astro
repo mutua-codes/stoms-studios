@@ -1,0 +1,34 @@
+---
+// Hero Component - Fixed to show heads fully
+---
+<section class="relative h-screen min-h-[600px] flex items-center justify-center bg-midnight pt-20">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="/images/hero-choir.jpg" 
+      alt="Stoms Studios recording a choir" 
+      class="w-full h-full object-cover object-top opacity-50"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/60 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+    <span class="text-gold font-sans tracking-[0.2em] uppercase text-sm font-bold mb-4 block drop-shadow-md">
+      Welcome to Stoms Studios
+    </span>
+    <h1 class="text-5xl md:text-7xl font-serif text-offwhite font-bold leading-tight mb-6 drop-shadow-lg">
+      Capturing Moments.<br/>
+      <span class="text-gold">Creating Art.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-offwhite/90 font-sans mb-10 max-w-2xl mx-auto drop-shadow">
+      Professional photography, videography, and music production based in Kitui Town. We train, record, and bring your creative vision to life.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="bg-gold text-midnight px-8 py-3 rounded-sm font-bold uppercase tracking-wide hover:bg-offwhite transition-colors duration-300">
+        Book a Session
+      </a>
+      <a href="/portfolio" class="border border-gold/70 text-gold px-8 py-3 rounded-sm font-bold uppercase tracking-wide hover:bg-gold hover:text-midnight transition-colors duration-300 backdrop-blur-sm">
+        View Portfolio
+      </a>
+    </div>
+  </div>
+</section>

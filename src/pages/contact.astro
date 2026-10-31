@@ -1,0 +1,74 @@
+---
+
+import Layout from '@layouts/Layout.astro';
+import Navbar from '../components/layout/Navbar.astro';
+import Footer from '../components/layout/Footer.astro';
+import WhatsAppForm from '../components/contact/WhatsAppForm.tsx';
+---
+
+<Layout title="Contact Us | Stoms Studios">
+  <Navbar />
+  
+  <main class="pt-20">
+    <!-- Header -->
+    <section class="py-20 bg-midnight text-offwhite text-center border-b border-charcoal">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Get in <span class="text-gold">Touch</span></h1>
+        <p class="text-offwhite/70 text-lg max-w-2xl mx-auto">
+          Ready to book a session or have a question about our services? Fill out the form below and send us a direct WhatsApp enquiry.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 bg-midnight text-offwhite">
+      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- Left Column: Form -->
+        <div>
+          <WhatsAppForm client:load />
+        </div>
+
+        <!-- Right Column: Contact Info -->
+        <div class="space-y-8">
+          <div class="bg-charcoal p-8 rounded-sm border border-white/5">
+            <h3 class="text-2xl font-serif font-bold text-gold mb-4">Direct Phone Numbers</h3>
+            <p class="text-offwhite/70 mb-4">Prefer to call? Reach us directly on:</p>
+            <ul class="space-y-3">
+              <li>
+                <a href="tel:0703227541" class="flex items-center gap-3 text-lg hover:text-gold transition-colors">
+                  <span class="text-gold">📞</span> 0703 227 541
+                </a>
+              </li>
+              <li>
+                <a href="tel:0726217507" class="flex items-center gap-3 text-lg hover:text-gold transition-colors">
+                  <span class="text-gold">📞</span> 0726 217 507
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-charcoal p-8 rounded-sm border border-white/5">
+            <h3 class="text-2xl font-serif font-bold text-gold mb-4">Studio Location</h3>
+            <p class="text-offwhite/70 leading-relaxed">
+              Kitui Town, Kilungya Street<br/>
+              Opposite Parkside Hotel<br/>
+              Kitui, Kenya
+            </p>
+          </div>
+
+          <div class="bg-charcoal p-8 rounded-sm border border-white/5">
+            <h3 class="text-2xl font-serif font-bold text-gold mb-4">Working Hours</h3>
+            <p class="text-offwhite/70 leading-relaxed">
+              Monday - Saturday: 8:00 AM - 8:00 PM<br/>
+              Sunday: By Appointment Only
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/layout/Navbar.astro';
+import Footer from '../components/layout/Footer.astro';
+---
+
+<Layout title="Portfolio | Stoms Studios">
+  <Navbar />
+  
+  <main class="pt-20">
+    <!-- Page Header -->
+    <section class="py-20 bg-midnight text-offwhite text-center border-b border-charcoal">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our <span class="text-gold">Portfolio</span></h1>
+        <p class="text-offwhite/70 text-lg max-w-2xl mx-auto">
+          A showcase of our photography, event coverage, and selected creative work.
+        </p>
+      </div>
+    </section>
+
+    <!-- Photography Gallery (9 Images) -->
+    <section class="py-20 bg-charcoal text-offwhite">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          
+          <!-- Image 1 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-1.jpg" alt="Photography 1" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 2 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-2.jpg" alt="Photography 2" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 3 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-3.jpg" alt="Photography 3" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 4 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-4.jpg" alt="Photography 4" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 5 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-5.jpg" alt="Photography 5" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 6 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-6.jpg" alt="Photography 6" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 7 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-7.jpg" alt="Photography 7" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 8 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-8.jpg" alt="Photography 8" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          
+          <!-- Image 9 -->
+          <div class="group relative aspect-square overflow-hidden rounded-sm bg-midnight border border-white/5">
+            <img src="/images/gallery-9.jpg" alt="Photography 9" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Coverage & Selected Creative Work -->
+    <section class="py-24 bg-midnight text-offwhite">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+        
+        <!-- Event Coverage -->
+        <div class="bg-charcoal p-10 rounded-sm border border-white/5">
+          <h2 class="text-2xl font-serif font-bold text-gold mb-4">Event Coverage</h2>
+          <p class="text-offwhite/70 leading-relaxed mb-4">
+            From corporate events and graduations to live concerts and church services, we provide comprehensive event coverage. Our team ensures that every key moment is documented with professional precision.
+          </p>
+          <p class="text-offwhite/70 leading-relaxed">
+            We offer both photography and videography packages tailored to the scale and nature of your event.
+          </p>
+        </div>
+
+        <!-- Selected Creative Work -->
+        <div class="bg-charcoal p-10 rounded-sm border border-white/5">
+          <h2 class="text-2xl font-serif font-bold text-gold mb-4">Selected Creative Work</h2>
+          <p class="text-offwhite/70 leading-relaxed mb-4">
+            Beyond standard coverage, we specialize in creative direction. This includes studio portraiture, music video production, and conceptual photography.
+          </p>
+          <p class="text-offwhite/70 leading-relaxed">
+            We collaborate closely with artists, musicians, and brands to develop unique visual identities that stand out.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
